@@ -51,7 +51,7 @@ with st.sidebar:
         )
 
 # Checking if the user has introduced the OpenAI API Key
-missing_openai = openai_api_key is None
+missing_openai = openai_api_key is None or openai_api_key==""
 
 if missing_openai:
     st.warning("⬅️ Please introduce an API Key to continue!")
